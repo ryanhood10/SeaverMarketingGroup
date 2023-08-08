@@ -1,0 +1,63 @@
+.schedule-title {
+    text-align: center;
+  }
+  
+  .calendar {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: #ce3939;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calendar-controls button:hover {
+    background-color: #7d5a56;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 14.28%;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+    height: 3rem;
+  }
+  
+  td span {
+    display: block;
+    font-weight: bold;
+    margin-top: -1rem;
+  }
+  
+  .calendar-month {
+    text-align: center;
+  }
+  

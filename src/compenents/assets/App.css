@@ -1,0 +1,284 @@
+.App {
+  text-align: center;
+  background-color: #2b2d42;
+  color: #ccdbdc;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #2b2d42;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ccdbdc;
+}
+
+.App-link {
+  color: #9ad1d4;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add styles for landing page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  padding-top: 5rem;
+  flex-grow: 1;
+}
+
+.landing-page h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-page p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.landing-page button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #9ad1d4;
+  color: #2b2d42;
+  cursor: pointer;
+}
+
+.landing-page button:hover {
+  background-color: #ccdbdc;
+  color: #2b2d42;
+}
+
+/* Add styles for About component */
+.about {
+  padding: 2rem;
+}
+
+.name-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Add styles for Contact component */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.contact-form button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #9ad1d4;
+  color: #2b2d42;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ccdbdc;
+  color: #2b2d42;
+}
+.cool-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2b2b2b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.cool-button:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+
+.error {
+  color: red;
+}
+
+/* Add styles for Portfolio component */
+.projects-div {
+  padding: 2rem;
+  
+}
+
+#Portfolio {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.project-container h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-container img {
+  align-items: center;
+     max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the height as needed */
+  object-fit: contain; /* Preserve aspect ratio */
+}
+
+/* ...previous styles... */
+
+/* Add styles for Resume component */
+.resume {
+  padding: 2rem;
+}
+
+.resume h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume a {
+  font-size: 1.5rem;
+  color: #9ad1d4;
+  text-decoration: none;
+}
+
+.resume a:hover {
+  color: #ccdbdc;
+}
+
+.proficiencies {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.proficiencies h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.proficiencies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.proficiencies li {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* Add styles for Header component */
+/* Header.css */
+
+header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #2b2d42;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  font-size: 1.25rem;
+  color: #ccdbdc;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #9ad1d4;
+}
+
+/* add style for main project container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* PortfolioContainer.css */
+
+.landing {
+  margin-top: 40px; /* Adjust the value as needed */
+}

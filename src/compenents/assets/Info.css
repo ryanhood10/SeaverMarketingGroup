@@ -1,0 +1,97 @@
+/* Info.css */
+
+.info-container {
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 47%;
+  }
+  
+  .info-box {
+    background-color: #46cefc;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-info{
+    align-items: center;
+    justify-content: center;
+  }
+  .info-logo {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  
+  .info-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .split-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Adjust the shadow values */
+
+  }
+  
+  .contact-info, .social-media-info {
+    justify-content: center;
+    align-items: center;
+    width: 45%; /* Adjust the width of each section as needed */
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-media-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-margin {
+    margin-bottom: 60px; /* Adjust the margin value as needed */
+  }
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .info-container {
+        width: 90%; /* Adjust width for mobile devices */
+      }
+    .info-box {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .info-logo {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    
+    .split-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contact-info, .social-media-info {
+      width: 100%;
+      margin-top: 10px;
+    }
+    /* Media Query for Landscape Orientation */
+  @media (max-width: 1024px) and (orientation: landscape) {
+    .info-container {
+      width: 80%; /* Adjust width for landscape orientation */
+    }
+  }
+  }
+  

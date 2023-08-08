@@ -1,0 +1,96 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+/* Apply Open Sans font to the elements in your Home component */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* You can target specific elements as needed */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+}
+.hero-container {
+  background-image: url('../assets/pictures/CourtHeader.png'); /* Replace with the actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color for the title */
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow for better visibility */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.box-wrapper {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-image {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.slideshow {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.news {
+  font-size: 18px;
+  text-align: center;
+}
+.footer-margin {
+  margin-bottom: 20px; /* Adjust the margin value as needed */
+}
+
+
+@media (max-width: 600px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .main-image {
+    max-width: 100%;
+  }
+
+  .slideshow {
+    height: 200px;
+  }
+  .footer-margin {
+    margin-bottom: 20px; /* Adjust the margin value as needed */
+  }
+  
+}
+
