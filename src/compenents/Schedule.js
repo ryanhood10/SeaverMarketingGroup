@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './assets/Schedule.css';
 
 const Schedule = () => {
   const currentDate = new Date();

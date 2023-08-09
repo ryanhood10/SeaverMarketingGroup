@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './compenents/Footer';
 import Header from './compenents/Header';
 import PortfolioContainer from './compenents/PortolioContainer';
-import Info from './compenents/Info';
-import './compenents/assets/App.css';
+import './index.css'
 
 function App() {
   const [loading, setLoading] = useState(true);

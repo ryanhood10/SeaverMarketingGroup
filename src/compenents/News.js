@@ -1,7 +1,5 @@
 // News.js
-
 import React from 'react';
-import './assets/News.css';
 
 const News = () => {
   return (

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { validateEmail } from '../utils/validators';
-import "./assets/App.css"
 
 function Contact() {
   // Set up state for form data and errors
