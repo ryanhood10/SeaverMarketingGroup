@@ -4,6 +4,8 @@ import Footer from './compenents/Footer';
 import Header from './compenents/Header';
 import PortfolioContainer from './compenents/PortolioContainer';
 import Hero from './compenents/Hero';
+import Engagement from './compenents/Engagement';
+import NewsLetter from './compenents/NewsLetter'
 
 import './index.css'
 
@@ -23,6 +25,8 @@ function App() {
       <div className="main-container">
         <Header />
         <Hero />
+        <Engagement />
+        <NewsLetter />
         <Routes>
           <Route
             path="/"
