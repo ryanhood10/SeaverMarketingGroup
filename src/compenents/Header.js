@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Header = () => {
   const location = useLocation();
 
+  //importing state for navbar toggle
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <header>
       <nav className='flex justify-between items-center h-24 max-w-[1240px] mx-auto text-white'>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Seaver Marketing Group</h1>
-        <ul className='flex hidden'>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>Seaver Marketing Group</h1>
+        <ul className='hidden md:flex'>
           <li className='p-4' >
             <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
               Home
@@ -40,18 +47,23 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <div>
-          <AiOutlineMenu size={20} />
+
+
+        <div onClick={handleNav} className='block md:hidden'>
+          {/* if else statement to show navbar state */}
+          {!nav ? <AiOutlineClose size={20}/> :    <AiOutlineMenu size={20} /> }
         </div>
 
-        <div className='fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900'>
-          <ul>
-        <li className='p-4' >
+    {/* Second menu (for side Navbar) */}
+
+        <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#00300] ease-in-out duration-500' : "fixed left-[-100%]"}>
+          <ul className='pt-12 uppercase'>
+        <li className='p-4 border-b border-gray-600' >
             <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
               Home
             </Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 border-b border-gray-600'>
             <Link
               to="/schedule"
               className={location.pathname === '/schedule' ? 'active' : ''}
@@ -59,7 +71,7 @@ const Header = () => {
               Company
             </Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 border-b border-gray-600'>
             <Link
               to="/news"
               className={location.pathname === '/news' ? 'active' : ''}
@@ -67,7 +79,7 @@ const Header = () => {
               Resources
             </Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 border-b border-gray-600'>
             <Link
               to="/contact"
               className={location.pathname === '/contact' ? 'active' : ''}

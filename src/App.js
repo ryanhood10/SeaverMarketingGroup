@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './compenents/Footer';
 import Header from './compenents/Header';
 import PortfolioContainer from './compenents/PortolioContainer';
+import Hero from './compenents/Hero';
+
 import './index.css'
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
     <Router>
       <div className="main-container">
         <Header />
+        <Hero />
         <Routes>
           <Route
             path="/"
