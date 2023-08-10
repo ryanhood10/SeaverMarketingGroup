@@ -5,7 +5,9 @@ import Header from './compenents/Header';
 import PortfolioContainer from './compenents/PortolioContainer';
 import Hero from './compenents/Hero';
 import Engagement from './compenents/Engagement';
-import NewsLetter from './compenents/NewsLetter'
+import NewsLetter from './compenents/NewsLetter';
+import HeadlineCards from './compenents/HeadlineCards';
+
 
 import './index.css'
 
@@ -27,14 +29,15 @@ function App() {
         <Hero />
         <Engagement />
         <NewsLetter />
+        <HeadlineCards />
         <Routes>
           <Route
             path="/"
             element={<PortfolioContainer page="Home" showInfo={true} />}
           />
           <Route
-            path="/schedule"
-            element={<PortfolioContainer page="Schedule" />}
+            path="/testimonials"
+            element={<PortfolioContainer page="Testimonials" />}
           />
           <Route
             path="/contact"
