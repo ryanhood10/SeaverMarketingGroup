@@ -1,6 +1,6 @@
 import React from 'react';
-import robot2 from './assets/pictures/ryanh5800_robot_current_day_bd7addf9-7568-48cf-b261-27977247aeb6.png';
 import Market1 from './assets/pictures/MarketingImage1.png';
+import CustomerTestimonials from './assets/pictures/CustomerTestimonials.png'
 import react1 from './assets/pictures/ryanh5800_React_icon_programming_68468fde-6f40-4320-8555-184738340d8c.png';
 import { useNavigate } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const HeadlineCards = () => {
           <p className='px-2'>Testimonials</p>
           <button  className="bg-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto py-3 text-black" onClick={handleViewTestimonials}>View Now</button>
         </div>
-        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={react1} alt='robot2' />
+        <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={CustomerTestimonials} alt='robot2' />
       </div>
 
       {/* Card 2 */}

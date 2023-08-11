@@ -64,19 +64,19 @@ const Header = () => {
             </Link>
           </li>
           <li className='p-4 border-b border-gray-600'>
-            <Link
-              to="/schedule"
+          <Link
+              to="/solutions"
               className={location.pathname === '/schedule' ? 'active' : ''}
             >
-              Company
+              Solutions
             </Link>
           </li>
           <li className='p-4 border-b border-gray-600'>
-            <Link
-              to="/news"
+          <Link
+              to="/testimonials"
               className={location.pathname === '/news' ? 'active' : ''}
             >
-              Resources
+              Testimonials
             </Link>
           </li>
           <li className='p-4 border-b border-gray-600'>

@@ -8,11 +8,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 function Footer() {
   return (
     <footer className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
      
-      <div className='lg:col-span-3 flex justify-between'>
+      <div className='lg:col-span-3 flex justify-between space-x-10'>
             <div>
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'> Connect with us Further</h1>
             <p className='py-4'>Connect with us on LinkedIn, Facebook, or send us an email</p>
@@ -53,7 +54,9 @@ function Footer() {
 
       <div className='lg:col-span-3 flex justify-between'>
         <div>
-          <h6 className='text-xl text-gray-400 font-bold'>Solutions</h6>
+        <Link to="/solutions" className="text-[#00df9a] text-xl font-bold">
+                        Solutions
+                      </Link>
           <ul>
             <li className='py-2 text-sm'>Analytics</li>
             <li className='py-2 text-sm'>Email Marketing Campaigns</li>

@@ -1,7 +1,17 @@
 import React from "react";
-import Laptop from "./assets/pictures/MarkingImage2.png"
+import Laptop from "./assets/pictures/MarkingImage2.png";
+import { useNavigate } from 'react-router-dom';
+
 
 const Engagement = () => {
+
+    const navigate = useNavigate();
+
+    const handleViewSolutions = () => {
+        navigate('/solutions');
+      };
+  
+
     return(
         <div className="w-full bg-white py-16 px-4">
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
@@ -12,7 +22,7 @@ const Engagement = () => {
                     <p> 
                     Welcome to a world of comprehensive solutions designed to lead you to successful business journey. Together, we will craft meaningful connections with targeted email campaigns that resonate. Elevate your online presence and visibility with powerful Search Engine Optimization techniques. As well as, our specialization in web solutions focuses on building websites that capture your brand essence. Choose us to embark on a growth-oriented journey that starts with precise email campaigns, impactful SEO, and expertly crafted websites.
                     </p>
-                    <button className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]">Get Started</button>
+                    <button onClick={handleViewSolutions} className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]">Get Started</button>
 
                 </div>
 
