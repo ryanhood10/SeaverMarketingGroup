@@ -8,7 +8,7 @@ import Engagement from './compenents/Engagement';
 import NewsLetter from './compenents/NewsLetter';
 import HeadlineCards from './compenents/HeadlineCards';
 import TestimonialsPage from './compenents/Testimonials';
-
+import OtherHero from './compenents/OtherHero';
 import './index.css';
 
 function App() {
@@ -40,8 +40,10 @@ function App() {
           />
           <Route
             path="/testimonials"
-            element={ 
+            element={ <React.Fragment>
+                <OtherHero />
                 <TestimonialsPage />
+                </React.Fragment>
             }
           />
           <Route
