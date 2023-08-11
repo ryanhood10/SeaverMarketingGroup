@@ -43,7 +43,7 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>Marketing Solutions</p>
           <p className='px-2'>Email Marketing Campaigns</p>
           <p className='px-2'>Search Engine Optimization</p>
-          <button onClick={scrollToRobots} className="bg-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto py-3 text-black">Order Now</button>
+          <button onClick={scrollToRobots} className="bg-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto py-3 text-black">View Now</button>
         </div>
         <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={Market1} alt='robot2' />
       </div>
@@ -54,7 +54,7 @@ const HeadlineCards = () => {
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
           <p className='font-bold text-2xl px-2 pt-4'>Premium Websites</p>
           <p className='px-2'>Customized Solutions</p>
-          <button className="bg-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto py-3 text-black">Order Now</button>
+          <button className="bg-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto py-3 text-black">View Now</button>
         </div>
         <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={react1} alt='robot2' />
       </div>
