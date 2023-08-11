@@ -10,6 +10,7 @@ import HeadlineCards from './compenents/HeadlineCards';
 import TestimonialsPage from './compenents/Testimonials';
 import OtherHero from './compenents/OtherHero';
 import './index.css';
+import Contact from './compenents/Contact';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -47,13 +48,19 @@ function App() {
             }
           />
           <Route
-            path="/contact"
-            element={<PortfolioContainer page="Contact" />}
+            path="/solutions"
+            element={<React.Fragment>
+              <OtherHero />
+            </React.Fragment>}
           />
           <Route
-            path="/news"
-            element={<PortfolioContainer page="News" showInfo={true} />}
+            path="/contact"
+            element={<React.Fragment>
+              <OtherHero />
+              <NewsLetter />
+            </React.Fragment>}
           />
+          
         </Routes>
         <Footer />
       </div>

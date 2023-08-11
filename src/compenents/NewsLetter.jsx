@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { validateEmail } from '../utils/validators';
+import { Link, useHistory } from "react-router-dom";
 
 const NewsLetter = () => {
+
 
      // Set up state for form data and errors
   const [formData, setFormData] = useState({
@@ -94,13 +96,19 @@ const handleSubmit = async (e) => {
                         <button type="submit" className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">Send Email</button>
                             </form>
                     </div>
-                    <p>Learn more about our established techniques our <span className="text-[#00df9a]">Services</span> page.</p>
+                    <p>
+                      Learn more about our established techniques on our{" "}
+                      <Link to="/solutions" className="text-[#00df9a]">
+                        Solutions
+                      </Link>{" "}
+                      page.
+                    </p>
 
                 </div>
 
              </div>
         </div>
     )
-}
+} 
 
 export default NewsLetter
