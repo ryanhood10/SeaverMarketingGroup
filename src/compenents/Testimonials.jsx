@@ -14,18 +14,18 @@ const testimonials = [
 
 const TestimonialsPage = () => {
   return (
-    <div className='bg-gray-200 max-w-[1640px] m-auto px-4 py-12 rounded-xl'>
+    <div className=' w-full m-auto px-4 py-12 rounded-xl'>
       <h1 className='text-[#00df9a] font-bold text-4xl text-center'>Customer Testimonials</h1>
 
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-4'>
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className='border rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300'
+            className='bg-white border rounded-xl shadow-gray-600 shadow-md overflow-hidden hover:shadow-md transition duration-800'
           >
             <div className='p-4'>
-              <p className='font-bold text-lg mb-2'>" {testimonial.text} "</p>
-              <p className='font-bold text-gray-700'>- {testimonial.author}</p>
+              <p className='font-bold text-lg mb-2 text-black'>" {testimonial.text} "</p>
+              <p className='font-bold text-gray-800'>- {testimonial.author}</p>
             </div>
           </div>
         ))}
