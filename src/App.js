@@ -7,9 +7,9 @@ import Hero from './compenents/Hero';
 import Engagement from './compenents/Engagement';
 import NewsLetter from './compenents/NewsLetter';
 import HeadlineCards from './compenents/HeadlineCards';
+import TestimonialsPage from './compenents/Testimonials';
 
-
-import './index.css'
+import './index.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,18 +26,23 @@ function App() {
     <Router>
       <div className="main-container">
         <Header />
-        <Hero />
-        <Engagement />
-        <NewsLetter />
-        <HeadlineCards />
+        
         <Routes>
           <Route
             path="/"
-            element={<PortfolioContainer page="Home" showInfo={true} />}
+            element={<React.Fragment>
+              <Hero />
+        <Engagement />
+        <NewsLetter />
+        <HeadlineCards />
+            </React.Fragment>
+            }
           />
           <Route
             path="/testimonials"
-            element={<PortfolioContainer page="Testimonials" />}
+            element={ 
+                <TestimonialsPage />
+            }
           />
           <Route
             path="/contact"
