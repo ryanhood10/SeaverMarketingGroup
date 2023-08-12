@@ -14,7 +14,7 @@ const testimonials = [
 
 const TestimonialsPage = () => {
   return (
-    <div className=' w-full m-auto px-4 py-12 rounded-xl'>
+        <div className="w-full bg-white py-16 px-4">
       <h1 className='text-[#00df9a] font-bold text-4xl text-center'>Customer Testimonials</h1>
 
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-4'>
@@ -25,7 +25,7 @@ const TestimonialsPage = () => {
           >
             <div className='p-4'>
               <p className='font-bold text-lg mb-2 text-black'>" {testimonial.text} "</p>
-              <p className='font-bold text-gray-800'>- {testimonial.author}</p>
+              <p className='font-bold text-purple-700'>- {testimonial.author}</p>
             </div>
           </div>
         ))}

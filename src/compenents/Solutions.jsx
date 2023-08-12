@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Laptop from "./assets/pictures/MarkingImage2.png";
 import { useNavigate } from 'react-router-dom';
 import EmailMarketing from './assets/pictures/EmailMarketing2.png'
@@ -13,6 +13,10 @@ const Solutions = () => {
     const handleViewSolutions = () => {
         navigate('/solutions');
       };
+
+
+      const newsletterRef = useRef(null);
+
   
 
     return(
@@ -29,7 +33,6 @@ const Solutions = () => {
                         As well as, our specialization in web solutions focuses on building websites that capture your brand essence.
                         Choose us to embark on a growth-oriented journey that starts with precise email campaigns, impactful SEO, and expertly crafted websites.
                         </p>
-                        <p className="md:text-2xl sm:text-xl text-l py-2"> </p>
 
                     </div>
             </div>
@@ -41,12 +44,18 @@ const Solutions = () => {
                             <p className="md:text-2xl sm:text-xl text-l py-2"> Increase your revenues with our automated email marketing campaigns.
                             By streamlining your email outreach, we attract more customers to your brand. 
                             Let us handle the automation while you enjoy increased business growth.
-                            </p>
+                           
                             
-
-                        </div>                          
+                            </p>
+                            <button onClick={() => {
+                                newsletterRef.current.scrollIntoView({
+                                behavior: "smooth",
+                                });
+                            }}
+                            className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-purple-400">Contact Us</button>
+                    </div>                          
                         <img className="w-[500px]    mx-auto my-4 rounded-xl" src={EmailMarketing} alt="/" />
-                </div>
+            </div>
 
 
                 <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 space-x-5 space-y-5">
@@ -59,8 +68,16 @@ const Solutions = () => {
                             Our experts will fine-tune your website, ensuring it ranks higher on search engine results pages.
                             By optimizing keywords, improving site structure, and enhancing content, we drive organic traffic to your platform. 
                             Experience increased exposure and attract a wider audience, all while we manage the complexities of SEO. 
-                            Elevate your online presence with our proven strategies and watch your visibility soar on the internet.            
+                            Elevate your online presence with our proven strategies and watch your visibility soar on the internet.         
+                               
                             </p>
+                            <button onClick={() => {
+                                newsletterRef.current.scrollIntoView({
+                                behavior: "smooth",
+                                });
+                            }}
+                             className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-purple-400">Contact Us</button>
+
                         </div>
                             <img className="w-[500px] mx-auto my-4 rounded-xl" src={SearchEngine} alt="/" />
                 </div>
@@ -80,15 +97,25 @@ const Solutions = () => {
                     We will craft customized features to fulfill your specific needs.
                      In today's digital landscape, a compelling landing page is indispensable for every company.
                      Let us create an online presence that truly reflects your business while incorporating essential website features.
+                 
                                          </p>
+                         <button onClick={() => {
+                                newsletterRef.current.scrollIntoView({
+                                behavior: "smooth",
+                                });
+                            }}
+                             className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-purple-400">Contact Us</button>
+
 
                 </div>
 
             </div>
 
           
-        
+                <div ref={newsletterRef}></div>
+
         </div>
+
     )
 }
 
