@@ -10,6 +10,7 @@ import TestimonialsPage from './compenents/Testimonials';
 import OtherHero from './compenents/OtherHero';
 import Solutions from './compenents/Solutions'
 import Calendly from './compenents/Calandly';
+import BookAMeeting from './compenents/BookAMeeting';
 import './index.css';
 
 
@@ -36,6 +37,7 @@ function App() {
               <Hero />
         <Engagement />
         <HeadlineCards />
+        <BookAMeeting />
         <Calendly />
         <NewsLetter />
             </React.Fragment>
@@ -54,6 +56,7 @@ function App() {
             element={<React.Fragment>
               <OtherHero />
               <Solutions />
+              <BookAMeeting />
               <Calendly />
               <NewsLetter />
             </React.Fragment>}
@@ -62,6 +65,7 @@ function App() {
             path="/contact"
             element={<React.Fragment>
               <OtherHero />
+              <BookAMeeting />
               <Calendly />
               <NewsLetter />
             </React.Fragment>}
