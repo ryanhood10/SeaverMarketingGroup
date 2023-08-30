@@ -26,7 +26,7 @@ const Hero = () => {
                     />
                 </div>
                 <p className="md:text-2xl text-xl font-bold text-gray-500 md:pl-4 pl-2">We monitor data analytics to increase your revenue, reach more customers, and keep them engaged.</p>
-                <button onClick={handleCalendlyClick} className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">Book a Meeting!</button>
+                <button onClick={handleCalendlyClick} className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">Book a Meeting Today!</button>
             </div>
         </div>
     )
