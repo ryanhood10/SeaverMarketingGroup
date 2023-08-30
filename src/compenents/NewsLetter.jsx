@@ -55,7 +55,7 @@ const handleSubmit = async (e) => {
     return(
         <div className="w-full py-16 text-white px-4">
             <div className="max-w-[1240px] mx-auto grid"> 
-                <div className="lg:col-span-2">
+                <div className="">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold-py-2"> Want to earn more revenue and reach more clients?  </h1>
                     <p>Send us a message!</p>
                 </div>

@@ -22,7 +22,7 @@ const Engagement = () => {
                     <p> 
                     Welcome to a world of comprehensive solutions designed to lead you to successful business journey. Together, we will craft meaningful connections with targeted email campaigns that resonate. Elevate your online presence and visibility with powerful Search Engine Optimization techniques. As well as, our specialization in web solutions focuses on building websites that capture your brand essence. Choose us to embark on a growth-oriented journey that starts with precise email campaigns, impactful SEO, and expertly crafted websites.
                     </p>
-                    <button onClick={handleViewSolutions} className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]">Get Started</button>
+                    <button onClick={handleViewSolutions} className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]">Learn More</button>
 
                 </div>
 

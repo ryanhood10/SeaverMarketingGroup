@@ -9,6 +9,7 @@ import HeadlineCards from './compenents/HeadlineCards';
 import TestimonialsPage from './compenents/Testimonials';
 import OtherHero from './compenents/OtherHero';
 import Solutions from './compenents/Solutions'
+import Calendly from './compenents/Calandly';
 import './index.css';
 
 
@@ -34,8 +35,9 @@ function App() {
             element={<React.Fragment>
               <Hero />
         <Engagement />
-        <NewsLetter />
         <HeadlineCards />
+        <Calendly />
+        <NewsLetter />
             </React.Fragment>
             }
           />
@@ -52,14 +54,15 @@ function App() {
             element={<React.Fragment>
               <OtherHero />
               <Solutions />
+              <Calendly />
               <NewsLetter />
-
             </React.Fragment>}
           />
           <Route
             path="/contact"
             element={<React.Fragment>
               <OtherHero />
+              <Calendly />
               <NewsLetter />
             </React.Fragment>}
           />
