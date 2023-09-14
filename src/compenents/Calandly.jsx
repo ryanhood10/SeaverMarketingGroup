@@ -17,7 +17,7 @@ const Calendly = () => {
   return (
     <div 
       className="calendly-inline-widget" 
-      data-url="https://calendly.com/ryanhood/30min" 
+      data-url="https://calendly.com/seavermarketing/seaver-marketing-intro-call" 
       style={{ minWidth: '320px', height: '700px' }}
     ></div>
   );

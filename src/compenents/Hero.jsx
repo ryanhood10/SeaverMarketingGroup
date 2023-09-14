@@ -7,7 +7,7 @@ const Hero = () => {
 
     const handleCalendlyClick = (e) => {
         e.preventDefault();
-        window.Calendly.initPopupWidget({url: 'https://calendly.com/ryanhood/30min'});
+        window.Calendly.initPopupWidget({url: 'https://calendly.com/seavermarketing/seaver-marketing-intro-call'});
     };
 
     return (

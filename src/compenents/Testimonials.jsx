@@ -12,10 +12,10 @@ const testimonials = [
 
   
 
-const TestimonialsPage = () => {
+const CaseStudies = () => {
   return (
         <div className="w-full bg-white py-16 px-4">
-      <h1 className='text-[#00df9a] font-bold text-4xl text-center'>Customer Testimonials</h1>
+      <h1 className='text-[#00df9a] font-bold text-4xl text-center'>Case Studies</h1>
 
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-4'>
         {testimonials.map((testimonial, index) => (
@@ -34,4 +34,4 @@ const TestimonialsPage = () => {
   );
 }
 
-export default TestimonialsPage;
+export default CaseStudies;

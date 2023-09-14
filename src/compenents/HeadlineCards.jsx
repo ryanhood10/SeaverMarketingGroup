@@ -35,7 +35,7 @@ const HeadlineCards = () => {
     const navigate = useNavigate();
 
     const handleViewTestimonials = () => {
-        navigate('/testimonials');
+        navigate('/CaseStudies');
     };
 
     const handleViewSolutions = () => {
@@ -54,8 +54,8 @@ const HeadlineCards = () => {
             {/* Card 1 */}
             <div ref={card1Ref} className={`rounded-xl relative hover:scale-105 duration-300 ${animationClasses(card1Visible)}`}>
                 <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-                    <p className='font-bold text-2xl px-2 pt-4'>See Customer</p>
-                    <p className='px-2'>Testimonials</p>
+                    <p className='font-bold text-2xl px-2 pt-4'>See </p>
+                    <p className='px-2'>Case Studies</p>
                     <button className="bg-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto py-3 text-black" onClick={handleViewTestimonials}>View Now</button>
                 </div>
                 <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src={CustomerTestimonials} alt='Customer Testimonials' />
