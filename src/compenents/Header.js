@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header>
       <nav className='flex justify-between items-center h-24 max-w-[1240px] mx-auto text-white'>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'><img className="w-16 inline-block" src={SeaverLogo} alt="Seaver Marketing Logo" ></img>Seaver Marketing Group</h1>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4 flex'><img className="w-16 inline-block" src={SeaverLogo} alt="Seaver Marketing Logo" ></img>Seaver Marketing Group</h1>
         <ul className='hidden md:flex font-mono'>
           <li className='p-4' >
             <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
