@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import SeaverLogo from './assets/pictures/SeaverLogo1.png'
 
 const Header = () => {
   const location = useLocation();
@@ -15,8 +16,8 @@ const Header = () => {
   return (
     <header>
       <nav className='flex justify-between items-center h-24 max-w-[1240px] mx-auto text-white'>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>Seaver Marketing Group</h1>
-        <ul className='hidden md:flex'>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'><img className="w-16 inline-block" src={SeaverLogo} alt="Seaver Marketing Logo" ></img>Seaver Marketing Group</h1>
+        <ul className='hidden md:flex font-mono'>
           <li className='p-4' >
             <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
               Home
@@ -30,7 +31,7 @@ const Header = () => {
               Solutions
             </Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 flex'>
             <Link
               to="/CaseStudies"
               className={location.pathname === '/news' ? 'active' : ''}
