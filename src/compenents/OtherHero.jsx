@@ -12,7 +12,7 @@ const OtherHero = () => {
                     <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:7xl font-bold' >The <span className='text-[#00df9a]'> Best</span></h1>
                     <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:7xl font-bold' >Solutions <span className='text-[#00df9a]'> Delivered</span></h1>
                 </div>
-                    <img className='w-full max-h-[350px] object-cover' src={robot1}  alt="robot1" />
+                    <img className='w-full max-h-[350px] object-cover rounded-2xl' src={robot1}  alt="robot1" />
             </div>
         </div>
     )
