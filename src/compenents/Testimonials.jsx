@@ -17,7 +17,10 @@ const CaseStudies = () => {
 
       <div className='py-6'>
         <p>
-          Click here for Downloadable version: <a href="/caseStudy.pdf#zoom=125" target="_blank" rel="noopener noreferrer" className='text-blue-500 font-bold'>Case Study</a>
+          Click here for Downloadable version: <a href={`${process.env.PUBLIC_URL}/caseStudy.pdf#zoom=125`} target="_blank" rel="noopener noreferrer" className='text-blue-500 font-bold'>
+  Case Study
+</a>
+
         </p>
       </div>
 
