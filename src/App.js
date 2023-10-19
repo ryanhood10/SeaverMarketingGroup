@@ -4,7 +4,7 @@ import Footer from './compenents/Footer';
 import Header from './compenents/Header';
 import Hero from './compenents/Hero';
 import Engagement from './compenents/Engagement';
-import NewsLetter from './compenents/NewsLetter';
+// import NewsLetter from './compenents/NewsLetter';
 import HeadlineCards from './compenents/HeadlineCards';
 import TestimonialsPage from './compenents/Testimonials';
 import OtherHero from './compenents/OtherHero';
@@ -39,7 +39,7 @@ function App() {
         <HeadlineCards />
         <BookAMeeting />
         <Calendly />
-        <NewsLetter />
+        {/* <NewsLetter /> */}
             </React.Fragment>
             }
           />
@@ -58,7 +58,7 @@ function App() {
               <Solutions />
               <BookAMeeting />
               <Calendly />
-              <NewsLetter />
+              {/* <NewsLetter /> */}
             </React.Fragment>}
           />
           <Route
@@ -67,7 +67,7 @@ function App() {
               <OtherHero />
               <BookAMeeting />
               <Calendly />
-              <NewsLetter />
+              {/* <NewsLetter /> */}
             </React.Fragment>}
           />
           
