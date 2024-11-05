@@ -38,10 +38,10 @@ function Footer() {
         `transform transition-all duration-1000 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`;
 
     return (
-        <footer ref={footerRef} className={`max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 ${animationClasses(footerVisible)}`}>
+        <footer ref={footerRef} className={`max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-700 ${animationClasses(footerVisible)}`}>
             <div className='lg:col-span-3 flex justify-between space-x-10'>
                 <div>
-                    <h1 className='w-full text-3xl font-bold text-[#00df9a]'> Connect with us Further</h1>
+                    <h1 className='w-full text-3xl font-bold text-green-800'> Connect with us Further</h1>
                     <p className='py-4'>Connect with us on LinkedIn or send us an email at <a className="font-bold" href="mailto:ryan@seavermarketing.com">ryan@seavermarketing.com</a></p>
                     <nav>
                         <ul className="flex justify-between md:w-[75%] my-6">
@@ -61,13 +61,13 @@ function Footer() {
                 </div>
                 <div className='lg:col-span-3 flex justify-between'>
                     <div>
-                        <Link to="/solutions" className="text-[#00df9a] text-xl font-bold">
+                        <Link to="/solutions" className="text-green-800 text-xl font-bold">
                             Solutions
                         </Link>
                         <ul>
-                            <li className='py-2 text-sm'>Analytics</li>
+                            <li className='py-2 text-sm'>Tracking Analytics</li>
+                            <li className='py-2 text-sm'>Affiliate Marketing Programs</li>
                             <li className='py-2 text-sm'>Email Marketing Campaigns</li>
-                            <li className='py-2 text-sm'>Search Engine Optimization</li>
                             <li className='py-2 text-sm'>Web Solutions</li>
                         </ul>
                     </div>

@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './compenents/Footer';
-import Header from './compenents/Header';
 import Hero from './compenents/Hero';
 import Engagement from './compenents/Engagement';
 // import NewsLetter from './compenents/NewsLetter';
 import HeadlineCards from './compenents/HeadlineCards';
 import TestimonialsPage from './compenents/Testimonials';
-import OtherHero from './compenents/OtherHero';
+import OtherHero from './compenents/Hero4';
 import Solutions from './compenents/Solutions'
 import Calendly from './compenents/Calandly';
 import BookAMeeting from './compenents/BookAMeeting';
+import Navbar from './compenents/Navbar';
 import './index.css';
+import KlaviyoTest from './compenents/Test';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   return (
     <Router>
       <div className="main-container">
-        <Header />
+        <Navbar />
         
         <Routes>
           <Route
@@ -67,6 +68,13 @@ function App() {
               <OtherHero />
               <BookAMeeting />
               <Calendly />
+              {/* <NewsLetter /> */}
+            </React.Fragment>}
+          />
+          <Route
+            path="/KlaviyoTest"
+            element={<React.Fragment>
+              <KlaviyoTest />
               {/* <NewsLetter /> */}
             </React.Fragment>}
           />

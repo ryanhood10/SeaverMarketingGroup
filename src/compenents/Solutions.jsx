@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import Laptop from "./assets/pictures/MarkingImage2.png";
+// import Laptop from "./assets/pictures/MarkingImage2.png";
 import { useNavigate } from 'react-router-dom';
-import EmailMarketing from './assets/pictures/EmailMarketing2.png';
-import CustomWebsite from './assets/pictures/CustomWebsite.png';
-import SearchEngine from './assets/pictures/SearchEngine2.png';
+// import EmailMarketing from './assets/pictures/EmailMarketing2.png';
+// import AffiliateMarketing from "./assets/pictures/MarkingImage2.png";
+import TotalMarketing from './assets/pictures/SeaverMarketingIMG1.webp'
+import EmailMarketing from './assets/pictures/SeaverMarketingIMG2.webp'
+import AffiliateMarketing from './assets/pictures/SeaverMarketingIMG4.webp'
 
 function useVisible(initialVisibility = false) {
     const [isVisible, setIsVisible] = useState(initialVisibility);
@@ -38,10 +40,8 @@ const Solutions = () => {
     const [contentRef, contentVisible] = useVisible();
     const [emailDivRef, emailDivVisible] = useVisible();
     const [emailImgRef, emailImgVisible] = useVisible();
-    const [seoDivRef, seoDivVisible] = useVisible();
-    const [seoImgRef, seoImgVisible] = useVisible();
-    const [websiteDivRef, websiteDivVisible] = useVisible();
-    const [websiteImgRef, websiteImgVisible] = useVisible();
+    const [affiliateDivRef, affiliateDivVisible] = useVisible();
+    const [affiliateImgRef, affiliateImgVisible] = useVisible();
 
     const handleViewSolutions = () => {
         navigate('/solutions');
@@ -53,59 +53,44 @@ const Solutions = () => {
     return (
         <div className="w-full bg-white py-16 px-4">
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 space-x-5 space-y-5">
-                <img ref={contentRef} className={`w-[500px] mx-auto my-4 rounded-xl ${animationClasses(contentVisible)}`} src={Laptop} alt="/" />
                 <div ref={contentRef} className={`flex flex-col justify-center space-y-3 ${animationClasses(contentVisible)}`}>
-                    <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2"> Our Solutions</h1>
+                    <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 mx-auto md:mx-0"> Our Solutions</h1>
                     <p className="md:text-2xl sm:text-xl text-l py-2"> 
-                        Welcome to a world of comprehensive solutions designed to lead you to a successful business journey.
-                        Together, we will craft meaningful connections with targeted email campaigns that resonate. 
-                        Elevate your online presence and visibility with powerful Search Engine Optimization techniques.
-                        As well as, our specialization in web solutions focuses on building websites that capture your brand essence.
-                        Choose us to embark on a growth-oriented journey that starts with precise email campaigns, impactful SEO, and expertly crafted websites.
+                        At Seaver Marketing Group, we specialize in delivering targeted Affiliate Marketing Programs and dynamic Email Marketing Campaigns that drive results. Our approach is tailored to meet the unique needs of your business, helping you expand your reach and increase your revenue through strategic marketing efforts.
                     </p>
                 </div>
+                <img ref={contentRef} className={`hidden md:block w-[500px] my-auto mx-auto px-2 rounded-2xl ${animationClasses(contentVisible)}`} src={TotalMarketing} alt="Online Marketing" />
+
             </div>
 
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 space-x-5 space-y-5">
+               
+                <img ref={emailImgRef}
+                 className={`w-[500px] mx-auto my-4 rounded-xl ${animationClasses(emailImgVisible)}`}
+                 src={EmailMarketing} alt="Email Marketing" />
                 <div ref={emailDivRef} className={`flex flex-col justify-center ${animationClasses(emailDivVisible)}`}>
                     <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2"> Email Marketing Campaigns</h1>
                     <p className="md:text-2xl sm:text-xl text-l py-2"> 
-                        Increase your revenues with our automated email marketing campaigns.
-                        By streamlining your email outreach, we attract more customers to your brand. 
-                        Let us handle the automation while you enjoy increased business growth.
+                        Maximize engagement and boost your sales with our expertly crafted Email Marketing Campaigns. We design and automate email sequences that keep your audience informed, engaged, and eager to connect with your brand. From newsletters to promotional emails, our tailored campaigns ensure that your message reaches the right people at the right time.
                     </p>
-                    <button onClick={handleViewSolutions} className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-purple-400">Contact Us</button>
+                    <button onClick={handleViewSolutions} 
+                    className="bg-[#00796b] w-[180px] sm:w-[200px] rounded-md font-medium my-4 sm:my-6 mx-auto py-2 sm:py-3 text-white hover:bg-[#005f56] transition duration-300 ease-in-out"
+                    >Contact Us</button>
                 </div>
-                <img ref={emailImgRef} className={`w-[500px] mx-auto my-4 rounded-xl ${animationClasses(emailImgVisible)}`} src={EmailMarketing} alt="/" />
             </div>
 
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 space-x-5 space-y-5">
-                <div ref={seoDivRef} className={`flex flex-col justify-center ${animationClasses(seoDivVisible)}`}>
-                    <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2"> Search Engine Optimization</h1>
+                <img ref={affiliateImgRef} 
+                 className={`w-[500px] mx-auto my-4 rounded-xl ${animationClasses(emailImgVisible)}`}
+                 src={AffiliateMarketing} alt="Affiliate Marketing" />
+                <div ref={affiliateDivRef} className={`flex flex-col justify-center ${animationClasses(affiliateDivVisible)}`}>
+                    <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2"> Affiliate Marketing Programs</h1>
                     <p className="md:text-2xl sm:text-xl text-l py-2"> 
-                        Boost your online visibility through our comprehensive Search Engine Optimization (SEO) services.
-                        Our experts will fine-tune your website, ensuring it ranks higher on search engine results pages.
-                        By optimizing keywords, improving site structure, and enhancing content, we drive organic traffic to your platform. 
-                        Experience increased exposure and attract a wider audience, all while we manage the complexities of SEO. 
-                        Elevate your online presence with our proven strategies and watch your visibility soar on the internet.
+                        Scale your business with our Affiliate Marketing Programs. We help you build and manage a network of partners who promote your products and services to a wider audience. Our program is designed to drive traffic and conversions by leveraging the power of affiliate relationships, making your brand more visible and accessible to potential customers.
                     </p>
-                    <button onClick={handleViewSolutions} className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-purple-400">Contact Us</button>
-                </div>
-                <img ref={seoImgRef} className={`w-[500px] mx-auto my-4 rounded-xl ${animationClasses(seoImgVisible)}`} src={SearchEngine} alt="/" />
-            </div>
-
-            <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 space-x-5 space-y-5">
-                <img ref={websiteImgRef} className={`w-[500px] sm:w-full mx-auto my-4 rounded-xl ${animationClasses(websiteImgVisible)}`} src={CustomWebsite} alt="/" />
-                <div ref={websiteDivRef} className={`flex flex-col justify-center ${animationClasses(websiteDivVisible)}`}>
-                    <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2"> Custom Website Builds</h1>
-                    <p className="md:text-2xl sm:text-xl text-l py-2"> 
-                        Acquire a tailor-made website that encapsulates your unique brand essence. 
-                        Our services encompass website design and development. 
-                        We will craft customized features to fulfill your specific needs.
-                        In today's digital landscape, a compelling landing page is indispensable for every company.
-                        Let us create an online presence that truly reflects your business while incorporating essential website features.
-                    </p>
-                    <button onClick={handleViewSolutions} className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-purple-400">Contact Us</button>
+                    <button onClick={handleViewSolutions}
+                    className="bg-[#00796b] w-[180px] sm:w-[200px] rounded-md font-medium my-4 sm:my-6 mx-auto py-2 sm:py-3 text-white hover:bg-[#005f56] transition duration-300 ease-in-out"
+                    >Contact Us</button>
                 </div>
             </div>
         </div>

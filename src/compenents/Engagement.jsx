@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Laptop from "./assets/pictures/MarkingImage2.png";
+import Laptop from "./assets/pictures/SeaverMarketingIMG3.webp";
 import { useNavigate } from 'react-router-dom';
 
 const Engagement = () => {
@@ -60,16 +60,25 @@ const Engagement = () => {
                     ref={contentRef}
                     className={`flex flex-col justify-center ${animationClasses(contentIsVisible)}`}
                 >
-                    <p className="text-[#00df9a] font-bold"> SEAVER MARKETING GROUP </p>
+                    <p className="text-green-800 font-bold"> SEAVER MARKETING GROUP </p>
                     <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2"> Our Solutions</h1>
-                    <p> 
-                        Welcome to a world of comprehensive solutions designed to lead you to a successful business journey. Together, we will craft meaningful connections with targeted email campaigns that resonate. Elevate your online presence and visibility with powerful Search Engine Optimization techniques. As well as, our specialization in web solutions focuses on building websites that capture your brand essence. Choose us to embark on a growth-oriented journey that starts with precise email campaigns, impactful SEO, and expertly crafted websites.
+                    <p className="md:text-xl sm:text-lg text-base py-2">
+                        At Seaver Marketing Group, we specialize in two main solutions to drive your business growth: 
+                        Affiliate Marketing Programs and Email Marketing Campaigns. 
+                        Our Affiliate Marketing Programs help you build a network of partners that promote your brand, 
+                        driving traffic and conversions. Our Email Marketing Campaigns are designed to engage your audience 
+                        through targeted, automated emails that boost sales and enhance brand loyalty.
                     </p>
-                    <button onClick={handleViewSolutions} className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]">Learn More</button>
+                    <button 
+                        onClick={handleViewSolutions} 
+                        className="bg-[#00796b] w-[180px] sm:w-[200px] rounded-md font-medium my-4 sm:my-6 mx-auto py-2 sm:py-3 text-white hover:bg-[#005f56] transition duration-300 ease-in-out"
+                        >
+                        Learn More
+                    </button>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Engagement;
